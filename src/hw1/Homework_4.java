@@ -13,12 +13,7 @@ class BaseFormat
 	}
 	
 }	
-interface exam
-{
-	public void Ans();
-}
-
-class Test_1 extends BaseFormat implements exam
+class Test_1 extends BaseFormat
 {
 	@Override
 	public void Ans()
@@ -47,7 +42,7 @@ class Test_1 extends BaseFormat implements exam
 		super.End();
 	}
 }
-class Test_2 extends BaseFormat implements exam
+class Test_2 extends BaseFormat
 {
 	@Override
 	public void Ans()
@@ -59,7 +54,7 @@ class Test_2 extends BaseFormat implements exam
 		super.End();
 	}
 }
-class Test_3 extends BaseFormat implements exam
+class Test_3 extends BaseFormat
 {
 	@Override
 	public void Ans() 
@@ -76,7 +71,7 @@ class Test_3 extends BaseFormat implements exam
 		super.End();
 	}
 }
-class Test_4 extends BaseFormat implements exam
+class Test_4 extends BaseFormat
 {
 	@Override
 	public void Ans()
@@ -105,7 +100,7 @@ class Test_4 extends BaseFormat implements exam
 		super.End();
 	}
 }
-class Test_5 extends BaseFormat implements exam
+class Test_5 extends BaseFormat
 {
 	@Override
 	public void Ans()
@@ -130,7 +125,7 @@ class Test_5 extends BaseFormat implements exam
 		super.End();
 	}
 }
-class Test_6 extends BaseFormat implements exam
+class Test_6 extends BaseFormat
 {
 	private int[][] getExamScoer()
 	{
