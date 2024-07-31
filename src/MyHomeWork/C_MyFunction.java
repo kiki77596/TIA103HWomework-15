@@ -1,3 +1,4 @@
+package MyHomeWork;
 
 import java.util.Vector;
 
@@ -16,7 +17,4 @@ public interface C_MyFunction {
 		}
 		return a;
 	}
-	
-	
-	
 }

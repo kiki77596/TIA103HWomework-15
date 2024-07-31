@@ -1,3 +1,4 @@
+package MyHomeWork;
 
 public class MyRctangle {
 	private double width;

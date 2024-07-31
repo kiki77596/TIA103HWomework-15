@@ -1,11 +1,11 @@
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Vector;
+package MyHomeWork;
+
+import java.util.*;
+
 
 public class HomeWork_5 {
 	class Test_1 extends C_BaseFormat implements C_TestResult
 	{
-		
 		private void starSquare(int width,int height)
 		{
 			for (int i = 0; i < height; i++)
@@ -21,9 +21,10 @@ public class HomeWork_5 {
 		public void Ans()
 		{
 			super.Title("1");
+			System.out.println("輸入寬與長:");
 			Scanner sc = new Scanner(System.in);
 			starSquare(sc.nextInt(), sc.nextInt());
-			
+			sc.close();
 			super.End();
 		}
 	}
@@ -65,7 +66,7 @@ public class HomeWork_5 {
 		@Override
 		public void Ans() 
 		{
-			super.Title(null);
+			super.Title("3");
 			
 			Integer[][] ai = {{1,6,3},{9,5,2}};
 			Double[][]  ad = {{1.2,3.5,2.2},{7.4,2.1,8.2}};
@@ -113,7 +114,7 @@ public class HomeWork_5 {
 			super.End();
 		}
 	}
-	 public C_BaseFormat Create(int TestId)
+	public C_BaseFormat Create(int TestId)
 	{
 		C_BaseFormat tem = null;
 		
@@ -141,6 +142,7 @@ public class HomeWork_5 {
 	{
 		HomeWork_5 func = new HomeWork_5();
 		Vector<C_BaseFormat> AnsAry = new Vector<C_BaseFormat>();
+		
 		AnsAry.add(func.Create(1));
 		AnsAry.add(func.Create(2));
 		AnsAry.add(func.Create(3));
