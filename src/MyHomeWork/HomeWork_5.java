@@ -3,6 +3,8 @@ package MyHomeWork;
 import java.util.*;
 
 
+
+
 public class HomeWork_5 {
 	class Test_1 extends C_BaseFormat implements C_TestResult
 	{
@@ -114,39 +116,17 @@ public class HomeWork_5 {
 			super.End();
 		}
 	}
-	public C_BaseFormat Create(int TestId)
-	{
-		C_BaseFormat tem = null;
-		
-		switch (TestId)
-		{
-		case 1: 
-			tem = new HomeWork_5.Test_1();
-			break;
-		case 2: 
-			tem = new HomeWork_5.Test_2();
-			break;
-		case 3: 
-			tem = new HomeWork_5.Test_3();
-			break;
-		case 5: 
-			tem = new HomeWork_5.Test_5();
-			break;
-		default:
-			break;
-		}
-		return tem;
-		
-	}
+	
 	public static void main(String[] args) 
 	{
 		HomeWork_5 func = new HomeWork_5();
 		Vector<C_BaseFormat> AnsAry = new Vector<C_BaseFormat>();
 		
-		AnsAry.add(func.Create(1));
-		AnsAry.add(func.Create(2));
-		AnsAry.add(func.Create(3));
-		AnsAry.add(func.Create(5));
+		AnsAry.add(func.new Test_1());
+		AnsAry.add(func.new Test_2());
+		AnsAry.add(func.new Test_3());
+		AnsAry.add(func.new Test_5());
+		
 		for (int i = 0; i < AnsAry.size(); i++) {
 			AnsAry.get(i).Ans();
 		}

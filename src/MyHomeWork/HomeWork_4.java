@@ -3,7 +3,7 @@ package MyHomeWork;
 import java.util.*;
 import java.math.*;
 import java.time.*;
-public class Homework_4 {
+public class HomeWork_4 {
 
 
 class Test_1 extends C_BaseFormat implements C_TestResult,C_MyFunction
@@ -72,7 +72,7 @@ class Test_4 extends C_BaseFormat implements C_TestResult,C_MyFunction
 		super.Title("4");
 		System.out.println("輸入欲借金額:");
 		Scanner sc = new Scanner(System.in);
-		sc.close();
+		
 		int input = sc.nextInt();
 		//sc.close();
 		Map<Integer, Integer> pair = new HashMap<Integer, Integer>();
@@ -82,7 +82,7 @@ class Test_4 extends C_BaseFormat implements C_TestResult,C_MyFunction
 		pair.put(19,1000);
 		pair.put(27,1200);
 		System.out.println("員工編號:");
-		
+		//sc.close();
 		for (Map.Entry<Integer, Integer> entry : pair.entrySet()) {
 			Integer key = entry.getKey();
 			Integer val = entry.getValue();
@@ -92,6 +92,7 @@ class Test_4 extends C_BaseFormat implements C_TestResult,C_MyFunction
 		
 		System.out.println("共"+pair.size()+"人");
 		System.out.println();
+		
 		super.End();
 		
 	}
@@ -117,7 +118,7 @@ class Test_5 extends C_BaseFormat implements C_TestResult,C_MyFunction
 	    int dayOfYear = date.getDayOfYear();
 	    System.out.println("輸入的日期為該年第 " + dayOfYear + " 天");
 
-	        
+	    
 		super.End();
 	}
 }
@@ -156,7 +157,7 @@ class Test_6 extends C_BaseFormat implements C_TestResult,C_MyFunction
 }
 	public static void main(String[] args) {
 		
-		Homework_4 func = new Homework_4();
+		HomeWork_4 func = new HomeWork_4();
 		Vector<C_BaseFormat> AnsAry = new Vector<C_BaseFormat>();
 	
 //  ********************************************
